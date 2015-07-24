@@ -2,7 +2,7 @@
 Dataset created by running run_analysis.R on data contained within UCI HAR Dataset
 
 ##Variables 
-Note: variables are normalized and bounded within [-1,1], thus unitless)
+Note: variables are normalized and bounded within [-1,1], thus unitless
 
 Variable | Description | Units
 ---------|------------|-----
