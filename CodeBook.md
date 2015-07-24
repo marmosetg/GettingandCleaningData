@@ -1,5 +1,4 @@
 #CodeBook for tidy_data Dataset 
-Dataset created by running run_analysis.R on data contained within UCI HAR Dataset
 
 ##Variables 
 Note: variables are normalized and bounded within [-1,1], thus unitless
@@ -96,6 +95,7 @@ angle.Y.gravityMean.|Average gravitational angular acceleration mean along y | n
 angle.Z.gravityMean.|Average gravitational angular acceleration mean along z | na
 
 ##Data
+Dataset created by running run_analysis.R on data contained within UCI HAR Dataset
 ###UCI HAR Dataset
 UCI HAR Dataset.zip obtained via https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
