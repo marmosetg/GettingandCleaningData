@@ -1,98 +1,99 @@
 #CodeBook for tidy_data Dataset 
 Dataset created by running run_analysis.R on data contained within UCI HAR Dataset
 
-##Variables
+##Variables 
+Note: variables are normalized and bounded within [-1,1], thus unitless)
 
-Variable | Description
----------|------------
-Subject | Test subject index 
-Activity|Activity performed during data sample
-tBodyAcc.mean...X|Average time domain body acceleration mean along x
-tBodyAcc.mean...Y|Average time domain body acceleration mean along y
-tBodyAcc.mean...Z|Average time domain body acceleration mean along z
-tBodyAcc.std...X|Average time domain body acceleration standard deviation along x
-tBodyAcc.std...Y|Average time domain body acceleration standard deviation along y
-tBodyAcc.std...Z|Average time domain body acceleration standard deviation along z
-tGravityAcc.mean...X|Average time domain gravity acceleration mean along x
-tGravityAcc.mean...Y|Average time domain gravity acceleration mean along y
-tGravityAcc.mean...Z|Average time domain gravity acceleration mean along z
-tGravityAcc.std...X|Average time domain gravity acceleration standard deviation along x
-tGravityAcc.std...Y|Average time domain gravity acceleration standard deviation along y
-tGravityAcc.std...Z|Average time domain gravity acceleration standard deviation along z
-tBodyAccJerk.mean...X|Average time domain body jerk mean along x
-tBodyAccJerk.mean...Y|Average time domain body jerk mean along y
-tBodyAccJerk.mean...Z|Average time domain body jerk mean along z
-tBodyAccJerk.std...X|Average time domain body jerk standard deviation along x
-tBodyAccJerk.std...Y|Average time domain body jerk standard deviation along y
-tBodyAccJerk.std...Z|Average time domain body jerk standard deviation along z
-tBodyGyro.mean...X|Average time domain gyroscope mean along x
-tBodyGyro.mean...Y|Average time domain gyroscope mean along y
-tBodyGyro.mean...Z|Average time domain gyroscope mean along z
-tBodyGyro.std...X|Average time domain gyroscope standard deviation along x
-tBodyGyro.std...Y|Average time domain gyroscope standard deviation along y
-tBodyGyro.std...Z|Average time domain gyroscope standard deviation along z
-tBodyGyroJerk.mean...X|Average time domain gyroscope jerk mean along x
-tBodyGyroJerk.mean...Y|Average time domain gyroscope jerk mean along y
-tBodyGyroJerk.mean...Z|Average time domain gyroscope jerk mean along z
-tBodyGyroJerk.std...X|Average time domain gyroscope jerk standard deviation along x
-tBodyGyroJerk.std...Y|Average time domain gyroscope jerk standard deviation along y
-tBodyGyroJerk.std...Z|Average time domain gyroscope jerk standard deviation along z
-tBodyAccMag.mean..|Average time domain body acceleration magnitude mean:
-tBodyAccMag.std..|Average time domain body acceleration magnitude standard deviation:
-tGravityAccMag.mean..|Average time domain gravity acceleration magnitude mean:
-tGravityAccMag.std..|Average time domain gravity acceleration magnitude standard deviation:
-tBodyAccJerkMag.mean..|Average time domain body jerk magnitude mean:
-tBodyAccJerkMag.std..|Average time domain body jerk magnitude standard deviation:
-tBodyGyroMag.mean..|Average time domain gyroscope magnitude mean:
-tBodyGyroMag.std..|Average time domain gyroscope magnitude standard deviation:
-tBodyGyroJerkMag.mean..|Average time domain gyroscope jerk magnitude mean:
-tBodyGyroJerkMag.std..|Average time domain gyroscope jerk magnitude standard deviation:
-fBodyAcc.mean...X|Average frequency domain body acceleration mean along x
-fBodyAcc.mean...Y|Average frequency domain body acceleration mean along y
-fBodyAcc.mean...Z|Average frequency domain body acceleration mean along z
-fBodyAcc.std...X|Average frequency domain body acceleration standard deviation along x
-fBodyAcc.std...Y|Average frequency domain body acceleration standard deviation along y
-fBodyAcc.std...Z|Average frequency domain body acceleration standard deviation along z
-fBodyAcc.meanFreq...X|Average frequency domain body acceleration mean frequency mean along x
-fBodyAcc.meanFreq...Y|Average frequency domain body acceleration mean frequency mean along y
-fBodyAcc.meanFreq...Z|Average frequency domain body acceleration mean frequency mean along z
-fBodyAccJerk.mean...X|Average frequency domain body jerk mean along x
-fBodyAccJerk.mean...Y|Average frequency domain body jerk mean along y
-fBodyAccJerk.mean...Z|Average frequency domain body jerk mean along z
-fBodyAccJerk.std...X|Average frequency domain body jerk standard deviation along x
-fBodyAccJerk.std...Y|Average frequency domain body jerk standard deviation along y
-fBodyAccJerk.std...Z|Average frequency domain body jerk standard deviation along z
-fBodyAccJerk.meanFreq...X|Average frequency domain body jerk mean frequency along x
-fBodyAccJerk.meanFreq...Y|Average frequency domain body jerk mean frequency along y
-fBodyAccJerk.meanFreq...Z|Average frequency domain body jerk mean frequency along z
-fBodyGyro.mean...X|Average frequency domain gyroscope mean along x
-fBodyGyro.mean...Y|Average frequency domain gyroscope mean along y
-fBodyGyro.mean...Z|Average frequency domain gyroscope mean along z
-fBodyGyro.std...X|Average frequency domain gyroscope standard deviation along x
-fBodyGyro.std...Y|Average frequency domain gyroscope standard deviation along y
-fBodyGyro.std...Z|Average frequency domain gyroscope standard deviation along z
-fBodyGyro.meanFreq...X|Average frequency domain gyroscope mean frequency along x
-fBodyGyro.meanFreq...Y|Average frequency domain gyroscope mean frequency along y
-fBodyGyro.meanFreq...Z|Average frequency domain gyroscope mean frequency along z
-fBodyAccMag.mean..|Average frequency domain body acceleration magnitude mean
-fBodyAccMag.std..|Average frequency domain body acceleration magnitude standard deviation
-fBodyAccMag.meanFreq..|Average frequency domain body acceleration mean frequency standard deviation
-fBodyBodyAccJerkMag.mean..|Average frequency domain body jerk magnitude mean
-fBodyBodyAccJerkMag.std..|Average frequency domain body jerk magnitude standard deviation
-fBodyBodyAccJerkMag.meanFreq..|Average frequency domain body jerk magnitude mean frequency
-fBodyBodyGyroMag.mean..|Average frequency domain gyroscope magnitude mean
-fBodyBodyGyroMag.std..|Average frequency domain gyroscope magnitude standard deviation
-fBodyBodyGyroMag.meanFreq..|Average frequency domain gyroscope magnitude mean frequency
-fBodyBodyGyroJerkMag.mean..|Average frequency domain gyroscope jerk magnitude mean
-fBodyBodyGyroJerkMag.std..|Average frequency domain gyroscope jerk magnitude standard deviation
-fBodyBodyGyroJerkMag.meanFreq..|Average frequency domain gyroscope jerk magnitude mean frequency
-angle.tBodyAccMean.gravity.|Average gravitational angular body acceleration mean
-angle.tBodyAccJerkMean..gravityMean.|Average gravitational angular body jerk acceleration mean
-angle.tBodyGyroMean.gravityMean.|Average gravitational angular gyroscopic body jerk mean
-angle.tBodyGyroJerkMean.gravityMean.|Average gravitational angular gyroscopic jerk mean
-angle.X.gravityMean.|Average gravitational angular acceleration mean along x
-angle.Y.gravityMean.|Average gravitational angular acceleration mean along y
-angle.Z.gravityMean.|Average gravitational angular acceleration mean along z
+Variable | Description | Units
+---------|------------|-----
+Subject | Test subject index  | na
+Activity|Activity performed during data sample  | na
+tBodyAcc.mean...X|Average time domain body acceleration mean along x  | na
+tBodyAcc.mean...Y|Average time domain body acceleration mean along y | na
+tBodyAcc.mean...Z|Average time domain body acceleration mean along z | na
+tBodyAcc.std...X|Average time domain body acceleration standard deviation along x | na
+tBodyAcc.std...Y|Average time domain body acceleration standard deviation along y | na
+tBodyAcc.std...Z|Average time domain body acceleration standard deviation along z | na
+tGravityAcc.mean...X|Average time domain gravity acceleration mean along x | na
+tGravityAcc.mean...Y|Average time domain gravity acceleration mean along y | na
+tGravityAcc.mean...Z|Average time domain gravity acceleration mean along z | na
+tGravityAcc.std...X|Average time domain gravity acceleration standard deviation along x | na
+tGravityAcc.std...Y|Average time domain gravity acceleration standard deviation along y | na
+tGravityAcc.std...Z|Average time domain gravity acceleration standard deviation along z | na
+tBodyAccJerk.mean...X|Average time domain body jerk mean along x | na
+tBodyAccJerk.mean...Y|Average time domain body jerk mean along y | na
+tBodyAccJerk.mean...Z|Average time domain body jerk mean along z | na
+tBodyAccJerk.std...X|Average time domain body jerk standard deviation along x | na
+tBodyAccJerk.std...Y|Average time domain body jerk standard deviation along y | na
+tBodyAccJerk.std...Z|Average time domain body jerk standard deviation along z | na
+tBodyGyro.mean...X|Average time domain gyroscope mean along x | na
+tBodyGyro.mean...Y|Average time domain gyroscope mean along y | na
+tBodyGyro.mean...Z|Average time domain gyroscope mean along z | na
+tBodyGyro.std...X|Average time domain gyroscope standard deviation along x | na
+tBodyGyro.std...Y|Average time domain gyroscope standard deviation along y | na
+tBodyGyro.std...Z|Average time domain gyroscope standard deviation along z | na
+tBodyGyroJerk.mean...X|Average time domain gyroscope jerk mean along x | na
+tBodyGyroJerk.mean...Y|Average time domain gyroscope jerk mean along y | na
+tBodyGyroJerk.mean...Z|Average time domain gyroscope jerk mean along z | na
+tBodyGyroJerk.std...X|Average time domain gyroscope jerk standard deviation along x | na
+tBodyGyroJerk.std...Y|Average time domain gyroscope jerk standard deviation along y | na
+tBodyGyroJerk.std...Z|Average time domain gyroscope jerk standard deviation along z | na
+tBodyAccMag.mean..|Average time domain body acceleration magnitude mean | na
+tBodyAccMag.std..|Average time domain body acceleration magnitude standard deviation  | na
+tGravityAccMag.mean..|Average time domain gravity acceleration magnitude mean | na
+tGravityAccMag.std..|Average time domain gravity acceleration magnitude standard deviation | na
+tBodyAccJerkMag.mean..|Average time domain body jerk magnitude mean | na
+tBodyAccJerkMag.std..|Average time domain body jerk magnitude standard deviation | na
+tBodyGyroMag.mean..|Average time domain gyroscope magnitude mean | na
+tBodyGyroMag.std..|Average time domain gyroscope magnitude standard deviation | na
+tBodyGyroJerkMag.mean..|Average time domain gyroscope jerk magnitude mean | na
+tBodyGyroJerkMag.std..|Average time domain gyroscope jerk magnitude standard deviation | na
+fBodyAcc.mean...X|Average frequency domain body acceleration mean along x | na
+fBodyAcc.mean...Y|Average frequency domain body acceleration mean along y | na
+fBodyAcc.mean...Z|Average frequency domain body acceleration mean along z | na
+fBodyAcc.std...X|Average frequency domain body acceleration standard deviation along x | na
+fBodyAcc.std...Y|Average frequency domain body acceleration standard deviation along y | na
+fBodyAcc.std...Z|Average frequency domain body acceleration standard deviation along z | na
+fBodyAcc.meanFreq...X|Average frequency domain body acceleration mean frequency mean along x | na
+fBodyAcc.meanFreq...Y|Average frequency domain body acceleration mean frequency mean along y | na
+fBodyAcc.meanFreq...Z|Average frequency domain body acceleration mean frequency mean along z | na
+fBodyAccJerk.mean...X|Average frequency domain body jerk mean along x | na
+fBodyAccJerk.mean...Y|Average frequency domain body jerk mean along y | na
+fBodyAccJerk.mean...Z|Average frequency domain body jerk mean along z | na
+fBodyAccJerk.std...X|Average frequency domain body jerk standard deviation along x | na
+fBodyAccJerk.std...Y|Average frequency domain body jerk standard deviation along y | na
+fBodyAccJerk.std...Z|Average frequency domain body jerk standard deviation along z | na
+fBodyAccJerk.meanFreq...X|Average frequency domain body jerk mean frequency along x | na
+fBodyAccJerk.meanFreq...Y|Average frequency domain body jerk mean frequency along y | na
+fBodyAccJerk.meanFreq...Z|Average frequency domain body jerk mean frequency along z | na
+fBodyGyro.mean...X|Average frequency domain gyroscope mean along x | na
+fBodyGyro.mean...Y|Average frequency domain gyroscope mean along y | na
+fBodyGyro.mean...Z|Average frequency domain gyroscope mean along z | na
+fBodyGyro.std...X|Average frequency domain gyroscope standard deviation along x | na
+fBodyGyro.std...Y|Average frequency domain gyroscope standard deviation along y | na
+fBodyGyro.std...Z|Average frequency domain gyroscope standard deviation along z | na
+fBodyGyro.meanFreq...X|Average frequency domain gyroscope mean frequency along x | na
+fBodyGyro.meanFreq...Y|Average frequency domain gyroscope mean frequency along y | na
+fBodyGyro.meanFreq...Z|Average frequency domain gyroscope mean frequency along z | na
+fBodyAccMag.mean..|Average frequency domain body acceleration magnitude mean | na
+fBodyAccMag.std..|Average frequency domain body acceleration magnitude standard deviation | na
+fBodyAccMag.meanFreq..|Average frequency domain body acceleration mean frequency standard deviation | na
+fBodyBodyAccJerkMag.mean..|Average frequency domain body jerk magnitude mean | na
+fBodyBodyAccJerkMag.std..|Average frequency domain body jerk magnitude standard deviation | na
+fBodyBodyAccJerkMag.meanFreq..|Average frequency domain body jerk magnitude mean frequency | na
+fBodyBodyGyroMag.mean..|Average frequency domain gyroscope magnitude mean | na
+fBodyBodyGyroMag.std..|Average frequency domain gyroscope magnitude standard deviation | na
+fBodyBodyGyroMag.meanFreq..|Average frequency domain gyroscope magnitude mean frequency | na
+fBodyBodyGyroJerkMag.mean..|Average frequency domain gyroscope jerk magnitude mean | na
+fBodyBodyGyroJerkMag.std..|Average frequency domain gyroscope jerk magnitude standard deviation | na
+fBodyBodyGyroJerkMag.meanFreq..|Average frequency domain gyroscope jerk magnitude mean frequency | na
+angle.tBodyAccMean.gravity.|Average gravitational angular body acceleration mean | na
+angle.tBodyAccJerkMean..gravityMean.|Average gravitational angular body jerk acceleration mean | na
+angle.tBodyGyroMean.gravityMean.|Average gravitational angular gyroscopic body jerk mean | na
+angle.tBodyGyroJerkMean.gravityMean.|Average gravitational angular gyroscopic jerk mean | na
+angle.X.gravityMean.|Average gravitational angular acceleration mean along x | na
+angle.Y.gravityMean.|Average gravitational angular acceleration mean along y | na
+angle.Z.gravityMean.|Average gravitational angular acceleration mean along z | na
 
 ##Data
 ###UCI HAR Dataset
